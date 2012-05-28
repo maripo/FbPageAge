@@ -1,0 +1,372 @@
+div.item
+{
+	border:1px solid #ddd;
+	min-height:32px;
+	clear:both;
+	position:absolute;
+	left:4px;
+	width:317px;
+	background-color:#fff;
+	-moz-box-shadow: 1px 1px 1px #000;
+	-webkit-box-shadow: 1px 1px 1px #000;
+	
+}
+div.foundation
+{
+	background-color:#feb;
+}
+div.item div.date
+{
+	color:#444;
+	font-size:9px;
+	width:64px;
+	padding:2px;
+}
+div.item .page
+{
+	color:#444;
+	font-size:11px;
+	padding:2px;
+}
+div.item .page a {
+	color:#08f;
+}
+div.item a
+{
+	text-decoration:none;
+}
+div.item div.icon
+{
+	clear:left;
+	width:50px;
+	height:50px;
+	background-repeat:no-repeat;
+	margin-top:2px;
+	
+}
+#timelineLeft div.item div.date {
+	float:left;
+	text-align:left;
+}
+#timelineRight div.item div.date {
+	float:right;
+	text-align:right;
+}
+#timelineLeft div.item div.icon
+{
+	float:right;
+	margin-left:8px;
+	margin-right:2px;
+}
+#timelineRight div.item div.icon
+{
+	float:left;
+	margin-right:8px;
+	margin-left:2px;
+
+}
+#timelineRight div.item .page {
+	text-align:left;
+}
+#timelineLeft div.item .page {
+	text-align:right;
+}
+#timelineRight div.item h2 {
+	text-align:left;
+}
+#timelineLeft div.item h2 {
+	text-align:right;
+}
+#timelineRight div.birthday h2 {
+	clear:right;
+	color:#08f;
+}
+#timelineLeft div.birthday h2 {
+	clear:left;
+	color:#08f;
+}
+div.item h2
+{
+	margin:0px;
+	padding:2px;
+	line-height:100%;
+	font-size:14px;
+}
+div.item h2 a{
+	color:#08f;
+}
+div.yearBox
+{
+	clear:both;
+	position:absolute;
+	height:24px;
+	width:70px;
+	font-size:12px;
+	font-weight:bold;
+	border-top:1px solid #666;
+	outline-top:1px solid black;
+	text-align:left;
+	text-indent:2px;
+	padding-top:2px;
+	color:#666;
+	/*text-shadow: rgba(127,127,127,0.3) -1px 0, rgba(127,127,127,0.3) 0 -1px, rgba(255,255,255,0.3) 0 1px, rgba(127,127,127,0.3) -1px -1px;*/
+}
+div.ageBox
+{
+	clear:both;
+	position:absolute;
+	width:70px;
+	text-align:center;
+	font-weight:bold;
+}
+div.ageBox div.num
+{
+	font-size:40px;
+	line-height:100%;
+	text-shadow: rgba(0,0,0,0.3) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.3) 0 1px, rgba(0,0,0,0.3) -1px -1px;
+}
+div.ageBox div.suffix
+{
+	font-size:7px;
+	line-height:100%;
+	padding-bottom:4px;
+}
+
+div.item div.description
+{
+	font-size:75%;
+	padding:4px;
+	clear:both;
+}
+
+#timelineLeft {
+
+}
+/*
+	columns
+*/
+#yearBar {
+	z-index:2;
+	position:absolute;
+	background-color:#ddd;
+	color:#666;
+	left:341px;
+	top:0px;
+	width:70px;
+	height:2000px;
+	-moz-box-shadow: 0px 1px 6px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.5);
+}
+#pointers {
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:1;
+}
+#timelineLeft {
+	z-index:2;
+	position:absolute;
+	left:6px;
+	top:0px;
+	width:360px;
+}
+#timelineRight {
+	z-index:2;
+	position:absolute;
+	left:419px;
+	top:0px;
+	width:350px;
+}
+img.pointerLeft {
+	left:329px;
+}
+img.pointerRight {
+	left:411px;
+	
+}
+
+/**
+	header, footer, body
+*/
+#article {
+	background-color:#777;
+	clear:both;
+	height:600px;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	background-image:url(../img/bg.png);
+	-moz-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
+	position:relative;
+}
+#timelineWrapper {
+	position:relative;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+#timelineContainer {
+	margin-left:auto;
+	margin-right:auto;
+	width:760px;
+	position:relative;
+}
+#header {
+	background-color:#999;
+	color:white;
+	height:24px;
+}
+#footer {
+	background-color:#999;
+	color:white;
+	border-top:1px solid #aaa;
+	font-size:13px;
+}
+#footer address {
+	padding:2px;
+	font-style:normal;
+	font-weight:normal
+}
+#footer address a{
+	color:#fff;
+}
+h1 {
+	font-size:14px;
+	margin:0px;
+	font-weight:normal;
+	padding:2px;
+	width:320px;
+}
+.likeContainer {
+	height:24px;
+	width:120px;
+	float:right;
+	overflow:hidden;
+}
+body {
+	margin:0px;
+	padding:0px;
+	font-family:sans-serif;
+}
+img.pointer {
+	position:absolute;
+}
+#introductionLayer {
+	width:760px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+#introduction {
+	border:1px solid #dddddd;
+	min-height:32px;
+	clear:both;
+	margin-top:100px;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	width:517px;
+	height:350px;
+	background-color:#ffffff;
+	text-align:left;
+	-moz-box-shadow: 1px 1px 1px #000;
+	-webkit-box-shadow: 1px 1px 1px #000;
+}
+#introductionSection {
+	position:absolute;
+	width:250px;
+	left:10px;
+	top:14px;
+	z-index:9;
+}
+#introduction .illust {
+	position:absolute;
+	width:200px;
+	left:280px;
+	top:14px;
+	height:340px;
+	color:#333;
+	
+}
+#introductionSection h2{
+	font-weight:normal;
+	margin:0px;
+	font-size:16px;
+	padding:2px 6px;
+}
+#introductionSection p{
+	padding:2px 6px;
+	margin:18px 2px ;
+	font-size:11px;
+	line-height:160%;
+}
+#introductionSection div.caption {
+	font-size:11px;
+	color:#c60;
+}
+a.authButton {
+	margin-top:44px;
+	margin-bottom:6px;
+	font-size:12px;
+	display:block;
+	width:211px;
+	height:61px;
+	color:white;
+	background-image:url(../img/button.png);
+	text-decoration:none;
+	text-align:center;
+	line-height:61px;
+	font-size:16px;
+}
+a.authButton:hover {
+	background-image:url(../img/button-active.png);
+}
+
+
+#friends {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	z-index:10;
+	background-color:#bbb;
+	width:760px;
+	height:44px;
+	display:none;
+}
+#friends div.icon {
+	width:40px;
+	height:40px;
+	margin:2px;
+	background-size:100% auto;
+	display:inline-block;
+	background-color:#ccc;
+	background-repeat:no-repeat;
+}
+#friends div.iconSelected {
+}
+#friends h2 {
+	float:left;
+	width:80px;
+	margin:0px;
+	padding:0px;
+	font-size:11px;
+}
+
+#friendsContainer {
+	height:44px;
+	overflow:hidden;
+}
+
+#friendsContainer a.selected div.icon{
+	outline:2px solid #04f;
+}
+#shareButton {
+	position:absolute;
+	right:2px;
+	font-size:11px;
+	top:2px;
+	z-index:10;
+	color:white;
+	display:none;
+	background-color: rgba(0,0,0,0.5);
+	text-decoration:none;
+}

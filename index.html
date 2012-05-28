@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link href="./css/timeline.css" rel="stylesheet" type="text/css" />
+		<title>
+			PageAge
+		</title>
+		<meta property="og:title" content="PageAge"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="https://apps.facebook.com/page-age/"/>
+		<meta property="og:image" content="https://fb-chronicles.appspot.com/img/illust_small.png"/>
+		<meta property="og:site_name" content="PageAge"/>
+		<meta property="fb:admins" content="665249380"/>
+		<meta property="og:description"
+			content="あの製品が発売されたのは何歳の頃だっけ?
+			生まれた年にはどんなできごとがあった?
+			PageAgeは、お気に入りのFacebookページの情報を使って、あなたの好きなモノだけの年表を作るサービスです。"/>
+		<script src="src/render.js" type="text/javascript">
+		</script>
+		<script src="src/friends.js" type="text/javascript">
+		</script>
+	</head>
+	<body onresize="resizeBody()">
+		<div id="fb-root"></div>
+		<div id="header">
+			<div class="likeContainer">
+				<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fapps.facebook.com%2Fpage-age%2F&amp;send=false&amp;layout=button_count&amp;width=120&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21&amp;appId=364907593572522" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe>
+			</div>
+			<h1>
+				PageAge
+			</h1>
+		</div>
+		<div id="article">
+			<a id="shareButton" onclick="postURL()" href="#">この年表を友達に見せる</a>
+			<div id="introductionLayer">
+				<div id="introduction">
+					<div id="introductionSection">
+						<h2>Welcome to PageAge</h2>
+						<p>
+							あの製品が発売されたのは何歳の頃だっけ?<br/>
+							生まれた年にはどんなできごとがあった?<br/><br/>
+							PageAgeは、お気に入りのFacebookページの情報を使って、あなたの好きなモノだけの年表を作るサービスです。
+						</p>
+						<div id="authSection">
+							<a class="authButton" href="#" onclick="auth()">PageAgeを使う</a>
+							<div class="caption">
+							(Facebookへのログインと「基本データ」「あなたの生年月日」「あなたの『いいね!』」の許可が必要です)
+							</div>
+						</div>
+						<div id="loadingSection" style="display:none;">
+							<img src="img/loading.gif"/>
+						</div>
+					</div>
+					<div class="illust"><img src="img/illust.png"/></div>
+				</div>
+			</div>
+			<div id="timelineWrapper">
+				<div id="timelineContainer" style="visibility:hidden">
+					<div id="pointers"></div>
+					<div id="yearBar"></div>
+					<div id="timelineLeft"></div>
+					<div id="timelineRight"></div>
+				</div>
+			</div>
+			<div id="friends"><div id="friendsContainer"></div></div>
+		</div>
+		<div id="footer">
+			<address>
+				2012 Maripo GODA &nbsp;&nbsp;
+				<a href="http://blog.maripo.org/">Blog</a> | <a href="http://www.facebook.com/maripo">Facebook</a> | <a href="http://twitter.com/MaripoGoda">Twitter</a>
+			</address>
+		</div>
+		<script type="text/javascript" src="src/fb_api.js"></script>
+	</body>
+</html>
