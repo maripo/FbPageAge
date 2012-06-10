@@ -74,6 +74,7 @@ function render (user)
 	{
 		timeline.addMilestone(milestones[i]);
 	}
+	document.getElementById('loadingLayer').style.display = "none";
 	document.getElementById('yearBar').style.height = (timeline.getTotalHeight() + 60) + "px";
 	document.getElementById("timelineContainer").style.height = (timeline.getTotalHeight() + 60) + "px";
 	document.getElementById('introduction').style.display = "none";

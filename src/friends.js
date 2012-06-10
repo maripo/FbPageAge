@@ -55,6 +55,7 @@ User.prototype.render = function ()
 	me.getBox().className = '';
 	this.getBox().className = 'selected';
 	clear();
+	document.getElementById('loadingLayer').style.display = "block";
 	fetchMilestones(this);
 };
 User.prototype.getUserId = function ()
