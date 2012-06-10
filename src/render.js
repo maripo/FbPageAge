@@ -436,6 +436,7 @@ function resizeBody ()
 	}
 	document.getElementById("introductionLayer").style.width = width + 'px';
 	document.getElementById("friends").style.width = width + 'px';
+	document.getElementById("loadingLayer").style.width = width + 'px';
 	var articleHeight = height - 60;
 	document.getElementById("article").style.height = articleHeight + 'px';
 	document.getElementById("timelineWrapper").style.height = articleHeight + 'px';
