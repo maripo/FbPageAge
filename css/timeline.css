@@ -250,11 +250,41 @@ body {
 img.pointer {
 	position:absolute;
 }
+#loadingLayer {
+	width:760px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:6;
+	display:none;
+}
+#loading p{
+	margin:0px;
+	padding:0px;
+}
+#loading {
+	border:1px solid #888;
+	width:320px;
+	height:60px;
+	background-color:#ffffff;
+	margin-top:180px;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	text-align:center;
+	padding-top:12px;
+	color:#888;
+}
+/**
+	Introduction
+*/
 #introductionLayer {
 	width:760px;
 	position:absolute;
 	left:0px;
 	top:0px;
+	z-index:5;
+	text-align:center;
 }
 #introduction {
 	border:1px solid #dddddd;
